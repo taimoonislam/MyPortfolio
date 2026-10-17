@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Taymoon Islam Estia's developer portfolio.">
+
+    <title>Taymoon Islam Estia | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("portfolio-theme");
+
+            if (savedTheme === "light" || savedTheme === "dark") {
+                document.documentElement.dataset.theme = savedTheme;
+            }
+        } catch (error) {
+            // Continue with the default theme.
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="logo" aria-label="Go to home">
+                Taymoon Islam Estia
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"
+                title="Change theme">
+
+                <span id="themeIcon" aria-hidden="true">☀</span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    COMPUTER SCIENCE & ENGINEERING STUDENT
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="accent-text">Taymoon Islam Estia.</span>
+                </h1>
+
+                <h2 class="hero-role">
+                    Interested in
+                    <span id="typingText">Web Development</span>
+                    <span class="typing-cursor" aria-hidden="true">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    I enjoy learning how technology works and turning
+                    ideas into useful digital experiences. Currently,
+                    I am developing my skills in web development and
+                    software engineering through hands-on projects.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore my work
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Get in touch
+                    </a>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/taimoonislam" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://linkedin.com/in/toimoon-islam" target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+            <aside class="hero-note reveal">
+
+                <div class="note-top">
+                    <span class="status-dot"></span>
+                    <span>MY CURRENT FOCUS</span>
+                </div>
+
+                <h3>Learn. Build. Improve.</h3>
+
+                <p>
+                    Building a strong foundation in programming,
+                    exploring modern web technologies, and working
+                    towards becoming a better developer.
+                </p>
+
+                <div class="note-divider"></div>
+
+                <div class="note-detail">
+                    <span>Based in</span>
+                    <strong>Dhaka, Bangladesh</strong>
+                </div>
+
+                <div class="note-detail">
+                    <span>Education</span>
+                    <strong>CSE · IUBAT</strong>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <!-- About -->
+        <section class="section container" id="about">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Getting better, one project at a time.</h2>
+            </div>
+
+            <div class="about-content reveal">
+
+                <p>
+                    I am a Computer Science and Engineering student at
+                    IUBAT, with an interest in building practical
+                    software and understanding the technology behind it.
+                </p>
+
+                <p>
+                    I believe the best way to learn programming is to
+                    keep experimenting, solve real problems, and learn
+                    from mistakes. I am currently focusing on improving
+                    my web development skills and building projects
+                    that demonstrate what I can do.
+                </p>
+
+            </div>
+
+            <div class="about-facts reveal">
+
+                <div class="fact">
+                    <span class="fact-number">01</span>
+                    <h3>Keep learning</h3>
+                    <p>Build knowledge through practice and curiosity.</p>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-number">02</span>
+                    <h3>Build projects</h3>
+                    <p>Apply concepts to practical ideas and solutions.</p>
+                </div>
+
+                <div class="fact">
+                    <span class="fact-number">03</span>
+                    <h3>Grow consistently</h3>
+                    <p>Improve code quality, communication, and teamwork.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WHAT I WORK WITH</p>
+                    <h2>Skills & Technologies</h2>
+
+                    <p class="section-description">
+                        Technologies I have studied or used in coursework
+                        and personal practice.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">01</span>
+                        <h3>Web Development</h3>
+                        <p>
+                            HTML, CSS, JavaScript, Bootstrap,
+                            ASP.NET MVC, Flask
+                        </p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">02</span>
+                        <h3>Programming</h3>
+                        <p>Python, C#, PHP, Kotlin</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">03</span>
+                        <h3>Tools & Platforms</h3>
+                        <p>
+                            Git, GitHub, VS Code, Visual Studio,
+                            Android Studio
+                        </p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">04</span>
+                        <h3>AI & Computer Vision</h3>
+                        <p>
+                            Machine Learning, Computer Vision, OpenCV
+                        </p>
+                    </article>
+
+                </div>
+
+                <p class="skills-note">
+                    This list will grow as I complete more projects
+                    and gain practical experience.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Projects I'm Building</h2>
+
+                <p class="section-description">
+                    A growing collection of my learning and development work.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-category">WEB DEVELOPMENT</span>
+                        <span class="project-symbol" aria-hidden="true">↗</span>
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive portfolio website designed to
+                        introduce me, present my skills, and share
+                        my development journey.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <span class="project-status">Currently building</span>
+
+                </article>
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-category">SOFTWARE PROJECT</span>
+                        <span class="project-symbol" aria-hidden="true">↗</span>
+                    </div>
+
+                    <h3>University Management System</h3>
+
+                    <p>
+                        An academic software project focused on
+                        organizing university-related information
+                        and supporting common management tasks.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Web Application</span>
+                        <span>Software Design</span>
+                    </div>
+
+                    <span class="project-status">Repository link pending</span>
+
+                </article>
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-category">WEB APPLICATION</span>
+                        <span class="project-symbol" aria-hidden="true">↗</span>
+                    </div>
+
+                    <h3>Quiz and Exam System</h3>
+
+                    <p>
+                        An academic application designed to organize
+                        quizzes, present questions, and support
+                        examination activities.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>ASP.NET MVC</span>
+                        <span>Web</span>
+                    </div>
+
+                    <span class="project-status">Repository link pending</span>
+
+                </article>
+
+            </div>
+
+            <p class="project-disclaimer">
+                Project descriptions and repository links will be updated
+                as the work is published on GitHub.
+            </p>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-alt" id="contact">
+
+            <div class="container contact-content reveal">
+
+                <p class="eyebrow">LET'S CONNECT</p>
+
+                <h2>Have a project or opportunity in mind?</h2>
+
+                <p>
+                    I am interested in learning, collaborating,
+                    and exploring opportunities to grow as a developer.
+                </p>
+
+                <div class="contact-actions">
+
+                    <a href="https://github.com/taimoonislam" target="_blank" rel="noopener noreferrer"
+                        class="button button-primary">
+                        Visit GitHub
+                    </a>
+
+                    <a href="https://linkedin.com/in/toimoon-islam" target="_blank" rel="noopener noreferrer"
+                        class="button button-secondary">
+                        Connect on LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                Taymoon Islam Estia
+            </a>
+
+            <p>
+                Designed and developed by Taymoon Islam Estia.
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
